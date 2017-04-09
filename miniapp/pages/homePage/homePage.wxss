@@ -1,0 +1,231 @@
+.search{
+   display: flex;
+   flex-direction: row;
+   background-color: #f2f2f2;
+
+}
+
+.search-img{
+   margin: auto 0 auto 20rpx;
+
+}
+.placeholdere{
+   font-size: 14px;
+   color: #d1d1d1;
+   margin-left:20rpx;
+
+}
+.search input{
+   height:100%;
+   width:600rpx;
+   margin-left: 20px;
+   font-size: 28rpx; 
+
+}
+.swiper-s{
+    width: 100%;
+    height: 360rpx;
+
+
+
+}
+.swiper-img1{
+    
+    width: 100%;
+    height: 460rpx;
+
+}
+.swiper-img2{
+   
+    width: 100%;
+    height: 460rpx;
+}
+.swiper-img3{
+  
+    width: 100%; 
+    height: 460rpx;
+
+}
+.sort{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.font1{
+  
+  padding-left: 60rpx;
+  font-size: 30rpx;
+  color:cornflowerblue;
+
+}
+.font2{
+  padding-left: 480rpx;
+  font-size: 30rpx;
+  color:cornflowerblue;
+}
+.phone{
+   margin-top: 25rpx;
+   display: flex;
+   flex-direction: row;
+   margin-left: 30rpx;
+}
+.phoneText{
+  display: flex;
+  flex-direction:column;
+  width: 200rpx;
+  height: 100rpx;
+}
+.fangxing{
+  padding-top: 5rpx;
+  font-size:25rpx;
+  color:gainsboro;
+
+}
+.shouji{
+  padding-top:20rpx; 
+  font-size:50rpx;
+
+
+}
+.phoneImg{
+  width: 120rpx;
+  height: 120rpx;
+
+}
+.firstRow{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.fangxingshuma{
+   padding-top: 5rpx;
+ font-size:25rpx;
+  color:gainsboro;
+  
+
+
+}
+.shumaText{
+   display: flex;
+  flex-direction:column;
+  width: 200rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+
+
+}
+.shuma{
+   
+   margin-top: 25rpx;
+   display: flex;
+   flex-direction: row;
+   margin-left: 20rpx;
+
+}
+.shumaImg{
+     width: 130rpx;
+  height: 120rpx;
+
+}
+.post-container{
+   display:flex;
+   flex-direction: column;
+   margin-top: 5rpx;
+   margin-bottom: 40rpx;
+   background-color: #fff;
+   border-bottom:1px solid #ededed;
+   border-top: 1px solid #ededed;
+   padding-top: 5px;
+}
+.post-auther-date{
+    margin-top: 10rpx;
+    margin-bottom: 20rpx;
+    margin-left: 10rpx;
+}
+.post-auther{
+   width: 55rpx;
+   height:55rpx;
+   vertical-align: middle;
+
+}
+.post-name{
+  margin-left: 20rpx;
+  font-size: 27rpx;
+ vertical-align: middle;
+
+}
+.post-date{
+   padding-left: 300rpx;
+   vertical-align: middle;
+   font-size: 30rpx;
+   color: gainsboro;
+}
+
+.content-scroll{
+  display: flex;
+  white-space: nowrap;
+   width: 100%;
+  height: 220rpx;
+ 
+}
+.scroll-image1{
+  width: 300rpx;
+   height: 220rpx;
+
+
+}
+.scroll-image2{
+  width: 300rpx;
+  height: 220rpx;
+
+
+}
+.scroll-image3{
+  width: 300rpx;
+  height: 220rpx;
+
+
+}
+.scroll-view1{
+  display: inline-block;
+  width: 310rpx;
+  height: 220rpx;
+
+}
+.scroll-view2{
+  display: inline-block;
+
+  width: 310rpx;
+  height: 220rpx;
+
+}
+.scroll-view3{
+  display: inline-block;
+  width: 310rpx;
+  height: 220rpx;
+
+}
+.money{
+   margin-left: 20rpx;
+   color: red;
+
+
+}
+.content{
+  padding-top: 3rpx;
+   font-size: 30rpx;
+   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+
+}
+.special{
+   margin-left: 660rpx;
+   width: 25rpx;
+   height: 25rpx;
+   
+}
+.specialCount{
+   font-size: 30rpx;
+   color: grey;
+
+}

@@ -1,0 +1,48 @@
+{
+  "pages":[
+    
+      "pages/homePage/homePage",
+       "pages/register/register",
+      "pages/shopping/shopping",
+      
+      "pages/my/my",
+    
+     "pages/personal/personal",
+      "pages/welcome/welcome"
+     
+    ],
+     "window":{
+    "navigationBarBackgroundColor": "#b3d4db"
+     },
+       "tabBar": {
+       "color":"#405f80",
+       "selectedColor": "#11cd6e",
+       "borderStyle": "white",
+       "backgroundColor": "#ffffff",
+       "list": [{
+         "pagePath": "pages/homePage/homePage",
+         "text": "首页",
+         "iconPath": "/images/首页.png",
+         "selectedIconPath": "/images/首页选中.png"
+       },{
+      
+         "pagePath": "pages/shopping/shopping",
+         "text": "购物车",
+         "iconPath": "/images/购物车.png",
+         "selectedIconPath": "/images/购物车选中.png"
+
+
+       },{
+         "pagePath": "pages/my/my",
+         "text": "我",
+         "iconPath": "/images/我的.png",
+         "selectedIconPath": "/images/我的选中.png"
+
+
+
+
+       }]
+     }
+     
+       
+}

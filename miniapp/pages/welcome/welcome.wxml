@@ -1,0 +1,7 @@
+ <view class="container">
+   <image class="first-photo" src="/images/头像1.png"></image>
+   <text class="fond1">hello,五月</text>
+   <view class="viex">
+      <text class="fond2">开启你的微淘之旅吧</text>
+    </view>
+ </view>

@@ -1,0 +1,26 @@
+<view class="login">
+    <view class="section">
+      <view class="section_title">用户名：</view>
+      <input class="section_input" name="username" placeholder="请输入邮箱/手机号" bindinput="usernameInput" />
+    </view>
+    <view class="section">
+       <view class="section_title">密码：</view>
+       <input class="section_input" password type="text" name="password" placeholder="密码" bindinput="passwordInput" />
+    </view>
+      <view class="buttons">
+         <button formType="submit" bindtap="loginBtnClick">登录</button>
+      </view>
+
+      <view id="xiamian">
+            <checkbox-group name="checkbox">
+              <label><checkbox value="checkbox1" checked="checked"/>自动登录</label>
+           </checkbox-group>
+
+           <view>
+               
+              <navigator url="../register/register"  hover-class="changstyle">免费注册</navigator>
+           </view>
+       </view>
+    
+
+</view>

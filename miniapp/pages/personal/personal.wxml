@@ -1,0 +1,9 @@
+<view >
+    
+    <view class="userinfo">
+       <image src="/images/头像1.png" class="userinfo-avatar" background-size="cover">
+       </image>
+       <text class="userinfo-nickname">李白是不是头不合适</text>
+    </view>
+    
+</view>

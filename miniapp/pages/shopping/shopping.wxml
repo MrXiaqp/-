@@ -1,0 +1,4 @@
+<view wx:if="{{sign}}">
+  <text>sdsdsd</text>
+
+</view>

@@ -1,0 +1,41 @@
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.first-photo{
+  width: 400rpx;
+  height: 400rpx;
+  margin-top: 150rpx;
+  
+}
+.fond1{
+    font-family: MicroSoft Yahei;
+   margin-top: 100rpx;
+   font-size: 32rpx;
+   font-weight: bold;
+}
+.viex{
+ margin-top: 150rpx;
+ border: 1px solid #405f80;
+ width: 300rpx;
+ height: 100rpx;
+ border-radius: 5px;
+ text-align: center;
+}
+.fond2{
+   font-family: MicroSoft Yahei;
+   font-size: 32rpx;
+   font-weight:bold;
+   color: #405f80;
+   line-height:100rpx;
+
+}
+page{
+  height: 100%;
+   background-color: #b3d4db;
+
+
+}

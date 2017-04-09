@@ -1,0 +1,18 @@
+<view class="login">
+    <view class="section">
+      <view class="section_title">用户名：</view>
+      <input class="section_input" name="username" placeholder="请输入邮箱/手机号" bindinput="usernameInput" />
+    </view>
+    <view class="section">
+       <view class="section_title">密码：</view>
+       <input class="section_input" password type="text" name="password" placeholder="密码" bindinput="passwordInput" />
+    </view>
+    <view class="section">
+       <view class="section_title">确认密码：</view>
+       <input class="section_input" password type="text" name="password" placeholder="确认密码" bindinput="confirmInput" />
+    </view>
+      <view class="buttons">
+         <button formType="submit" bindtap="registerBtnClick">注册</button>
+      </view>
+       
+</view>
