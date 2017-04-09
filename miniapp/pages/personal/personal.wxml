@@ -1,9 +1,32 @@
-<view >
-    
-    <view class="userinfo">
-       <image src="/images/头像1.png" class="userinfo-avatar" background-size="cover">
-       </image>
-       <text class="userinfo-nickname">李白是不是头不合适</text>
+<view class="container">
+  <view class="userinfo">
+    <image src="/images/头像1.png" class="userinfo-avatar" background-size="cover">
+    </image>
+    <text class="userinfo-nickname">李白是不是头不合适</text>
+  </view>
+  <view class="headView">
+    <view class="headviewFrist">
+      <image src="/images/发布.png" class="image1"></image>
+      <text class="headviewText">我发布的</text>
+      <text class="headviewText">0</text>
     </view>
-    
+    <view class="headviewFrist2">
+      <image src="/images/卖出.png" class="image2"></image>
+      <text class="headviewText">我卖出的</text>
+      <text class="headviewText">0</text>
+    </view>
+    <view class="headviewFrist3">
+      <image src="/images/我买到的.png" class="image3"></image>
+      <text class="headviewText">我买到的</text>
+      <text class="headviewText">0</text>
+    </view>
+    <view class="headviewFrist4">
+      <image src="/images/收藏1.png" class="image4"></image>
+      <text class="headviewText">我想要的</text>
+      <text class="headviewText">0</text>
+    </view>
+  </view>
+  <view class="infor_list">
+    <view class=""></view>
+  </view>
 </view>

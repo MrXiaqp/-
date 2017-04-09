@@ -1,0 +1,3 @@
+<view class="classname" wx:if="{{sign}}">
+   <text>好的好的</text>
+</view>

@@ -1,13 +1,14 @@
 {
   "pages":[
-    
+      "pages/personal/personal",
       "pages/homePage/homePage",
        "pages/register/register",
       "pages/shopping/shopping",
       
       "pages/my/my",
-    
-     "pages/personal/personal",
+      "pages/commit/commit",
+      
+        "pages/issue/issue",
       "pages/welcome/welcome"
      
     ],
@@ -25,6 +26,19 @@
          "iconPath": "/images/首页.png",
          "selectedIconPath": "/images/首页选中.png"
        },{
+         "pagePath":  "pages/commit/commit",
+         "text": "消息",
+         "iconPath": "/images/评论未选中.png",
+         "selectedIconPath": "/images/评论.png"     
+       },{
+      
+         "pagePath": "pages/issue/issue",
+         "text": "发布",
+         "iconPath": "/images/发布未选中.png",
+         "selectedIconPath": "/images/发布选中.png"
+
+
+       },{
       
          "pagePath": "pages/shopping/shopping",
          "text": "购物车",
@@ -37,10 +51,6 @@
          "text": "我",
          "iconPath": "/images/我的.png",
          "selectedIconPath": "/images/我的选中.png"
-
-
-
-
        }]
      }
      

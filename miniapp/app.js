@@ -1,7 +1,7 @@
 App({
  onLaunch:function (){
   
-     wx.setStorageSync('isSign',0);
+     wx.setStorageSync('isSign',1);
  }
 
  })

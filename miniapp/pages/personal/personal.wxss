@@ -1,9 +1,19 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+  box-sizing: border-box;
+  
+  
+} 
+
 .userinfo {
 	display: flex;
 	flex-direction: column;
 	padding: 50rpx 0;
 	align-items: center;
-	background: #479de6;
+	background: #405f80;
 }
 .userinfo-avatar {
 	width: 128rpx;
@@ -13,4 +23,69 @@
 }
 .userinfo-nickname {
 	color: #fff;
+}
+
+.infor_list{
+    display:block;
+    margin:0;
+ 
+}
+.headView{
+	width: 100%;
+    height: 200rpx;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10rpx;
+   
+
+
+}
+.headviewFrist{
+	display: flex;
+	flex-direction: column;
+    padding-left: 60rpx;
+
+
+}
+.headviewFrist2{
+  display: flex;
+  flex-direction: column;
+   margin-left: 50rpx;
+
+}
+.headviewFrist3{
+ display: flex;
+ flex-direction: column;
+ margin-left: 50rpx;
+}
+
+.headviewFrist4{
+  display: flex;
+  flex-direction: column;
+   margin-left: 50rpx;
+}
+.image1{
+   width:60rpx;
+   height:60rpx;
+   padding-left: 20rpx;
+}
+.image2{
+   width:60rpx;
+   height:60rpx;
+   padding-left: 30rpx;
+}
+.image3{
+   width:60rpx;
+   height:60rpx;
+   padding-left: 20rpx;
+}
+.image4{
+   width:60rpx;
+   height:60rpx;
+   padding-left: 20rpx;
+}
+.headviewText{
+  font-size: 30rpx;
+  color: gray;
+  text-align: center;
 }
