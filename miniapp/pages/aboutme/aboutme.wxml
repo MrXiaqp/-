@@ -1,0 +1,10 @@
+<view class="">
+  <view class="aboutme">
+   <text class=""> 关于我</text>
+   <text>即将大四毕业，九月上研究生，感谢所有的老师四年的培养，仲恺是我的人生开始的起点</text>
+  </view>
+  <view class="aboutBishe">
+   <text>关于软件</text>
+   <text>即将大四毕业，九月上研究生，感谢所有的老师四年的培养，仲恺是我的人生开始的起点</text>
+  </view>
+</view>

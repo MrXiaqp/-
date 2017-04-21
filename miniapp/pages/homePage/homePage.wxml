@@ -1,9 +1,9 @@
-<view>
+<view class="allView">
   <view class="search">
     <icon type="search" size="18" color="#405f80" class="search-img" />
     <input type="text" placeholder="搜索商品" placeholder-class="placeholdere" />
   </view>
-  <view>
+  <view class="swipers">
     <swiper class="swiper-s" indicator-dots="true" autoplay="true" duration="750">
       <swiper-item>
         <image src="{{computerImageUrl}}" class="swiper1-img"></image>
@@ -17,10 +17,10 @@
     </swiper>
   </view>
   <view class="sort">
-    <text class="font1">分类</text>
-    <text class="font2">更多分类></text>
+    <text class="font1">热门分类</text>
+    
   </view>
-  <view>
+  <view class="sorts">
     <view class="firstRow">
       <view class="phone">
         <view class="phoneText">
@@ -38,7 +38,7 @@
       </view>
     </view>
   </view>
-  <view class="post-container">
+  <view class="post-container" bindtap="detail">
     <view class="post-auther-date">
       <image src="{{autherImageUrl}}" class="post-auther"></image>
       <text class="post-name">最近是不是头不合适</text>
@@ -53,6 +53,39 @@
           <image src="{{lightImageUrl}}" class="scroll-image2"></image>
         </view>
         <view id="third" class="scroll-view3">
+          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
+        </view>
+         <view id="third" class="scroll-view3">
+          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
+        </view>
+      </scroll-view>
+    </view>
+    <text class="money">¥100</text>
+    <text class="content">近日购入,八成新，喜欢就联系我</text>
+    <view>
+      <image src="{{specialImageUrl}}" class="special"></image>
+      <text class="specialCount">123</text>
+    </view>
+  </view>
+
+   <view class="post-container">
+    <view class="post-auther-date">
+      <image src="{{autherImageUrl}}" class="post-auther"></image>
+      <text class="post-name">最近是不是头不合适</text>
+      <text class="post-date">2017.1.4</text>
+    </view>
+    <view>
+      <scroll-view scroll-x="true" class="content-scroll" scroll-into-view="third">
+        <view id="first" class="scroll-view1">
+          <image src="{{computerImageUrl}}" class="scroll-image1"></image>
+        </view>
+        <view id="second" class="scroll-view2">
+          <image src="{{lightImageUrl}}" class="scroll-image2"></image>
+        </view>
+        <view id="third" class="scroll-view3">
+          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
+        </view>
+         <view id="third" class="scroll-view3">
           <image src="{{xieImageUrl}}" class="scroll-image3"></image>
         </view>
       </scroll-view>

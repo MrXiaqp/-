@@ -1,0 +1,41 @@
+.row1{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height:300rpx; 
+   
+}
+.row1View{
+   display: flex;
+   flex-direction: column;
+   padding-left: 50rpx;
+   padding-top: 40rpx;
+   width: 250rpx;
+   height: 250rpx;
+}
+.row1Image{
+
+   width: 160rpx;
+   height: 180rpx;
+
+}
+.row1Text{
+   font-size: 35rpx;
+
+
+}
+.ZiXingrow1View{
+   display: flex;
+   flex-direction: column;
+   padding-left: 10rpx;
+   padding-top: 40rpx;
+   width: 250rpx;
+   height: 250rpx;
+
+}
+.ZiXingrow1Image{
+   
+   width: 160rpx;
+   height: 180rpx;
+
+}

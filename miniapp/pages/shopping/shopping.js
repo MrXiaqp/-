@@ -1,10 +1,14 @@
-var isSign = wx.getStorageSync('isSign');
+
 Page({
+ 
   data: {
-    
+    isSign:wx.getStorageSync('isSign')
    
   },
+  
   onLoad:function(options){
+    var isSign=wx.getStorageSync('isSign');
+    console.log(isSign);
     if(isSign=='0'){
      wx.switchTab({
        url: '../my/my',
@@ -22,13 +26,15 @@ Page({
     }
    },
    onShow:function(options){
+     var isSign=wx.getStorageSync('isSign');
+     console.log(isSign);
       if(isSign=='1'){
         this.setData({  
             sign:true
            
        })
-      }
-       if(isSign=='0'){
+      }else  if(isSign=='0'){
+        
      wx.switchTab({
        url: '../my/my',
        success: function(res){

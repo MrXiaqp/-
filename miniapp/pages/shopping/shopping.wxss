@@ -1,0 +1,177 @@
+.alls{
+  background-color: #DFDFDF;
+
+}
+.view-panel{
+
+   background-color: #ffffff;
+   margin-top: 20rpx;
+   position: relative;
+   overflow:hidden;
+}
+.view-panel::before {
+content:" ";
+position:absolute;
+left:0;
+top:0;
+right:0;
+height:1px;
+border-top:1rpx solid #E5E5E5;
+color:#E5E5E5;
+
+}
+.view-panel::after {
+content:" ";
+position:absolute;
+left:0;
+bottom:0;
+right:0;
+height:1px;
+border-bottom:1rpx solid #E5E5E5;
+color:#E5E5E5;
+
+}
+
+.view-panel_hd{
+padding:14px 15px 10px;
+
+color:#999999;
+font-size:13px;
+ position: relative;
+
+}
+
+.view-panel_hd::after{
+content:" ";
+position:absolute;
+left:20rpx;
+bottom:0;
+right:0;
+height:1px;
+border-bottom:1rpx solid #E5E5E5;
+color:#E5E5E5;
+
+
+}
+.info-meta {
+	padding-right: 10rpx;
+}
+.weui-media-box_appmsg{
+
+  display:-webkit-flex;
+
+  align-items:center;
+
+
+}
+.weui-media-box {
+padding:15px;
+
+
+}
+.weui-media-box_hd_in-appmsg {
+margin-right:.10rpx;
+width:150rpx;
+height:150rpx;
+line-height:60rpx;
+text-align:center;
+
+}
+.weui-media-box_thumb {
+width:100%;
+height:100%;
+vertical-align:top;
+
+}
+image{
+width:320rpx;
+height:240rpx;
+display:inline-block;
+overflow:hidden;
+
+}
+.weui-media-box_bd_in-appmsg{
+-webkit-box-flex:1;
+-webkit-flex:1;
+flex:1;
+min-width:0;
+position:relative;
+}
+.weui-media-box_title {
+
+font-size:25rpx;
+width:auto;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+
+word-wrap:break-word;
+word-break:break-all;
+
+}
+.weui-media-box_desc {
+color:#999999;
+font-size:30rpx;
+line-height:20rpx;
+overflow:hidden;
+text-overflow:ellipsis;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+
+}
+.text-orangered {
+color:orangered;
+
+}
+.button-sp-area {
+margin:20px auto 0;
+width:80%;
+text-align:center;
+
+}
+button[type="primary"] {
+color:#FFFFFF;
+background-color:#1AAD19;
+
+}
+.weui-btn {
+margin-top:15px;
+
+}
+button {
+position:relative;
+display:block;
+margin-left:auto;
+margin-right:auto;
+padding-left:28rpx;
+padding-right:28rpx;
+box-sizing:border-box;
+font-size:36rpx;
+text-align:center;
+text-decoration:none;
+line-height:2.55555556;
+border-radius:5px;
+-webkit-tap-highlight-color:transparent;
+overflow:hidden;
+color:#000000;
+background-color:#F8F8F8;
+
+}
+
+button::after {
+content:" ";
+width:200%;
+height:200%;
+position:absolute;
+top:0;
+left:0;
+border:1px solid rgba(0, 0, 0, 0.2);
+-webkit-transform:scale(0.5);
+transform:scale(0.5);
+-webkit-transform-origin:0 0;
+transform-origin:0 0;
+box-sizing:border-box;
+border-radius:10px;
+
+}

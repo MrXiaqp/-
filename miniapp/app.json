@@ -1,16 +1,25 @@
 {
   "pages":[
-      "pages/personal/personal",
-      "pages/homePage/homePage",
-       "pages/register/register",
-      "pages/shopping/shopping",
-      
+     "pages/welcome/welcome",
+      "pages/address/address",
       "pages/my/my",
-      "pages/commit/commit",
+     "pages/sort/sort",
+    
+      "pages/issue/issue",
+       "pages/homePage/homePage",
+      "pages/shopping/shopping",
+    
+       "pages/orderDetail/orderDetail",
+       "pages/register/register",
+   
       
-        "pages/issue/issue",
-      "pages/welcome/welcome"
-     
+      "pages/productDetail/productDetail",
+       "pages/aboutme/aboutme",
+    
+      "pages/my-commit/my-commit"
+      
+        
+      
     ],
      "window":{
     "navigationBarBackgroundColor": "#b3d4db"
@@ -26,10 +35,10 @@
          "iconPath": "/images/首页.png",
          "selectedIconPath": "/images/首页选中.png"
        },{
-         "pagePath":  "pages/commit/commit",
-         "text": "消息",
-         "iconPath": "/images/评论未选中.png",
-         "selectedIconPath": "/images/评论.png"     
+         "pagePath":  "pages/sort/sort",
+         "text": "分类",
+         "iconPath": "/images/分类.png",
+         "selectedIconPath": "/images/分类选中.png"     
        },{
       
          "pagePath": "pages/issue/issue",

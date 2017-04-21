@@ -1,26 +1,77 @@
-<view class="login">
-    <view class="section">
-      <view class="section_title">用户名：</view>
-      <input class="section_input" name="username" placeholder="请输入邮箱/手机号" bindinput="usernameInput" />
+<view class="login" wx:if="{{sign}}">
+  <view class="section">
+    <view class="section_title">用户名：</view>
+    <input class="section_input" name="username" placeholder="请输入邮箱/手机号" bindinput="usernameInput" />
+  </view>
+  <view class="section">
+    <view class="section_title">密码：</view>
+    <input class="section_input" password type="text" name="password" placeholder="密码" bindinput="passwordInput" />
+  </view>
+  <view class="buttons">
+    <button formType="submit" bindtap="loginBtnClick">登录</button>
+  </view>
+  <view id="xiamian">
+    <checkbox-group name="checkbox">
+      <label>
+        <checkbox value="checkbox1" checked="checked" />自动登录</label>
+    </checkbox-group>
+    <view>
+      <navigator url="../register/register" hover-class="changstyle">免费注册</navigator>
     </view>
-    <view class="section">
-       <view class="section_title">密码：</view>
-       <input class="section_input" password type="text" name="password" placeholder="密码" bindinput="passwordInput" />
+  </view>
+</view>
+<view class="container" wx:if="{{sign1}}">
+  <view class="userinfo">
+    <image src="/images/头像1.png" class="userinfo-avatar" background-size="cover">
+    </image>
+    <text class="userinfo-nickname">李白是不是头不合适</text>
+  </view>
+  <view class="headView">
+    <view class="headviewFrist" bindtap="headviewFrist">
+      <image src="/images/发布.png" class="image1"></image>
+      <text class="headviewText">我发布的</text>
+      <text class="headviewText">0</text>
     </view>
-      <view class="buttons">
-         <button formType="submit" bindtap="loginBtnClick">登录</button>
-      </view>
+    <view class="headviewFrist2">
+      <image src="/images/卖出.png" class="image2"></image>
+      <text class="headviewText">我卖出的</text>
+      <text class="headviewText">0</text>
+    </view>
+    <view class="headviewFrist3">
+      <image src="/images/我买到的.png" class="image3"></image>
+      <text class="headviewText">我买到的</text>
+      <text class="headviewText">0</text>
+    </view>
+    <view class="headviewFrist4">
+      <image src="/images/收藏1.png" class="image4"></image>
+      <text class="headviewText">我想要的</text>
+      <text class="headviewText">0</text>
+    </view>
+  </view>
+  <view class="infor_list">
+    <navigator url="/pages/address/address" hover-class="hovers" class="navigator1">
+      <image src="/images/iconfont-addr.png" class="addrImg"></image>
+      <text class="addrText">地址管理</text>
+      <text class="addrText1">></text>
+    </navigator>
+    <navigator url="url" hover-class="hovers" class="navigator1">
+      <image src="/images/关于我们.png" class="addrImg"></image>
+      <text class="addrText">个人修改</text>
+      <text class="addrText1">></text>
+    </navigator>
+    <navigator url="" hover-class="hovers" class="navigator1">
+      <image src="/images/iconfont-order.png" class="addrImg"></image>
+      <text class="addrText">常见问题</text>
+      <text class="addrText1">></text>
+    </navigator>
+      <navigator url="/pages/aboutme/aboutme" hover-class="hovers" class="navigator1">
+      <image src="/images/iconfont-about.png" class="addrImg"></image>
+      <text class="addrText">关于我们</text>
+      <text class="addrText1">></text>
+    </navigator>
+  </view>
 
-      <view id="xiamian">
-            <checkbox-group name="checkbox">
-              <label><checkbox value="checkbox1" checked="checked"/>自动登录</label>
-           </checkbox-group>
-
-           <view>
-               
-              <navigator url="../register/register"  hover-class="changstyle">免费注册</navigator>
-           </view>
-       </view>
-    
-
+  <view class="buttonView">
+     <button class="tuichuButton">退出登录</button>
+  </view>
 </view>

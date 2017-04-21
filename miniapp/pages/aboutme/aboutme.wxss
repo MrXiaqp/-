@@ -1,0 +1,11 @@
+.aboutme{
+  display: flex;
+  flex-direction: column
+
+}
+.aboutBishe{
+display: flex;
+  flex-direction: column
+
+
+}

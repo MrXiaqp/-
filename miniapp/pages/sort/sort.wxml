@@ -1,0 +1,30 @@
+<view class="classname">
+   <view class="row1">
+      <view class="row1View">
+        <image src="{{bangongSrc}}" class="row1Image"></image>
+        <text class="row1Text">办公/文具</text>
+      </view>
+      <view class="row1View">
+         <image src="{{kajuanSrc}}" class="row1Image"></image>
+         <text class="row1Text">票务/卡券</text>
+      </view>
+      <view class="row1View">
+          <image src="{{peishiSrc}}" class="row1Image"></image>
+          <text class="row1Text">配饰/美容</text>
+      </view>
+   </view>
+   <view class="row1">
+      <view class="row1View">
+        <image src="{{peijianSrc}}" class="row1Image"></image>
+        <text class="row1Text">电脑/配件</text>
+      </view>
+      <view class="ZiXingrow1View">
+        <image src="{{zixingSrc}}" class="ZiXingrow1Image"></image>
+        <text class="row1Text">代步工具</text>
+      </view>
+      <view class="row1View">
+        <image src="{{tushuSrc}}" class="row1Image"></image>
+        <text class="row1Text">图书/音像</text>
+      </view>
+   </view>
+</view>

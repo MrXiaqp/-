@@ -1,0 +1,16 @@
+<view class="">
+  <view class="view-panel">
+    <view class="view-panel_name">
+      <input placeholder="姓名" placeholder-style="name" class="names" />
+    </view>
+    <view class="view-panel_name">
+      <input placeholder="电话" placeholder-style="name" class="names" type="number" />
+    </view>
+    <view class="view-panel_name">
+      <input placeholder="宿舍地址" placeholder-style="name" class="names" />
+    </view>
+  </view>
+  <view class="saveView">
+    <button class=" ">保存</button>
+  </view>
+</view>

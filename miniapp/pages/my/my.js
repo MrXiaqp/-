@@ -1,5 +1,26 @@
-Page({
 
+Page({
+  onLoad:function(options){
+    var isSign = wx.getStorageSync('isSign');
+   
+    if(isSign=='0'){
+      this.setData({  
+            sign:true,
+            sign1:false
+       })
+           
+      }else if(isSign=='1'){
+         this.setData({  
+            sign:false,
+            sign1:true
+           
+       })
+
+      }
+      
+    },
+    
+   
  usernameInput:function(e){
       this.setData({
           username:e.detail.value
@@ -22,34 +43,14 @@ loginBtnClick:function(e){
         showCancel:false,
 
       })
-     // this.setData({
-     //     infoMess:'温馨提示：用户名或者密码不能为空!'
-     // })
+   
   }else {
-      // wx.redirectTo({
-      //   url: 'String',
-      //   success: function(res){
-      //     // success
-      //   },
-      //   fail: function() {
-      //     // fail
-      //   },
-      //   complete: function() {
-      //     // complete
-      //   }
-      // })
-      wx.redirectTo({
-        url: '../personal/personal',
-        success: function(res){
-          // success
-        },
-        fail: function() {
-          // fail
-        },
-        complete: function() {
-          // complete
-        }
-      })
+     
+   wx.setStorageSync('isSign',1);
+    console.log(wx.getStorageSync('isSign'));
+ 
+    this.onLoad();
+   
     //  wx.request({
     //    url: 'https://URL',
     //    data: {},

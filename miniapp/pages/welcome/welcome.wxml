@@ -1,7 +1,17 @@
  <view class="container">
-   <image class="first-photo" src="/images/头像1.png"></image>
-   <text class="fond1">hello,五月</text>
+   
+   <text class="fond1">请选择学校</text>
+   <text class="font3">{{school[value][value1]}}</text>
    <view class="viex">
-      <text class="fond2">开启你的微淘之旅吧</text>
+      <text class="fond2" bindtap="start">开启你的微淘之旅吧</text>
     </view>
+    <picker-view class="pickers" indicator-style="height:40rpx" bindchange="bindchange">
+    
+       <picker-view-column>
+          <view  wx:for="{{city}}" class="classname" style="line:40rpx">{{item}}</view>
+       </picker-view-column>
+       <picker-view-column>
+          <view  wx:for="{{school[value]}}" class="classname" style="line:40rpx">{{item}}</view>
+       </picker-view-column>
+    </picker-view>
  </view>

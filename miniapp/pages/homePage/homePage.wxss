@@ -1,3 +1,7 @@
+.allView{
+  background-color: #d1d1d1;
+ 
+}
 .search{
    display: flex;
    flex-direction: row;
@@ -10,7 +14,7 @@
 
 }
 .placeholdere{
-   font-size: 14px;
+   font-size: 14rpx;
    color: #d1d1d1;
    margin-left:20rpx;
 
@@ -18,8 +22,13 @@
 .search input{
    height:100%;
    width:600rpx;
-   margin-left: 20px;
-   font-size: 28rpx; 
+   margin-left: 20rpx;
+   font-size: 30rpx; 
+
+}
+.swipers{
+   background-color: #fff;
+
 
 }
 .swiper-s{
@@ -47,9 +56,10 @@
 
 }
 .sort{
-  margin-top: 30rpx;
+  margin-top: 15rpx;
   display: flex;
   flex-direction: row;
+  background-color: #fff
 }
 .font1{
   
@@ -62,6 +72,10 @@
   padding-left: 480rpx;
   font-size: 30rpx;
   color:cornflowerblue;
+}
+.sorts{
+
+  background-color: #fff;
 }
 .phone{
    margin-top: 25rpx;
@@ -132,7 +146,7 @@
    display:flex;
    flex-direction: column;
    margin-top: 5rpx;
-   margin-bottom: 40rpx;
+   margin-bottom: 20rpx;
    background-color: #fff;
    border-bottom:1px solid #ededed;
    border-top: 1px solid #ededed;
@@ -163,11 +177,11 @@
 }
 
 .content-scroll{
-  display: flex;
+ 
   white-space: nowrap;
    width: 100%;
   height: 220rpx;
- 
+  display: inline-block;
 }
 .scroll-image1{
   width: 300rpx;

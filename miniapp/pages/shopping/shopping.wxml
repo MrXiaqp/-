@@ -1,4 +1,48 @@
-<view wx:if="{{sign}}">
-  <text>sdsdsd</text>
+<view wx:if="{{sign}}" class="alls">
+  <view class="view-panel">
+    <view class="view-panel_hd">
+      <text data-value="edit" class="info-meta">删除</text>
+    </view>
+    <view class="">
+      <navigator url="url" class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box_hd_in-appmsg">
+           <image class="weui-media-box_thumb" src="/images/手机.png"></image>
+        </view>
+        <view class="weui-media-box_bd weui-media_bd_in_appmsg">
+           <view class="weui-media-box_title">
+              我是一个手机
+           </view>
+           <view class="weui-media-box_desc">
+              <text class="text-orangered ">117</text>
+           </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
 
+ <view class="view-panel">
+    <view class="view-panel_hd">
+      <text data-value="edit" class="info-meta">删除</text>
+    </view>
+    <view class="">
+      <navigator url="url" class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box_hd_in-appmsg">
+           <image class="weui-media-box_thumb" src="/images/手机.png"></image>
+        </view>
+        <view class="weui-media-box_bd weui-media_bd_in_appmsg">
+           <view class="weui-media-box_title">
+              我是一个手机
+           </view>
+           <view class="weui-media-box_desc">
+              <text class="text-orangered ">117</text>
+           </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  
+  <view class="button-sp-area">
+     <button class="weui-btn" type="primary">去结算</button>
+     <button class="weui-btn" type="warn">清空</button>
+  </view>
 </view>

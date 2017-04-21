@@ -1,3 +1,44 @@
-<view class="classname" wx:if="{{sign}}">
-   <text>好的好的</text>
+<view class="allView" wx:if="{{sign}}">
+  <view class="photoView">
+    <scroll-view scroll-x="true" class="content-scroll" scroll-into-view="sixth" >
+       <view class="scrollView1" id="first" style="display:{{view1}}">  
+          <image src="{{addPhotot}}" class="tinajia" bindtap="addPhoto"></image>
+      </view>
+      <block wx:for="{{imageList}}" wx:for-item="ima" wx:for-index="key">
+       <view class="scrollView2"  id="{{key}}" style="display:{{ids}}"> 
+          <image src="{{ima}}" class="mainImg"></image>
+          <view class="delete" bindtap="deleteImg" id="{{key}}">
+             <image src="{{delete}}" class="deleteImg"> </image>
+          </view>
+       </view>
+       </block>
+    </scroll-view>
+  </view>
+   <view class="titleAndDetail">
+      <view class="view-title_hd">
+        <textarea placeholder="宝贝标题" />
+      </view>
+       <view class="view-content_hd">
+        <textarea placeholder="宝贝的购买渠道，新旧/价格的描述" placeholder-class="view-content-style" class="baobei"/>
+      </view>
+   </view>
+   <view class="titleAndDetail">
+       <view class="view-content_phone_hd">
+          <text>电话:</text>
+          <textarea placeholder="请输入电话号码" type="number" class="phone" placeholder-style="font-size:40rpx"/> 
+       </view>
+       <view class="view-content_school_hd">
+          <text>学校：</text>
+          <text>{{school}}</text>
+       </view>
+       <view class="view-content_price_hd">
+          <text>价格:</text>
+          <input placeholder="请输入价格" type="number" placeholder-style="font-size:40rpx"/>
+       </view>
+   </view>
+   <view class="submit">
+      <button class="submit_button">提交</button>
+   
+   </view>
+ 
 </view>
