@@ -1,3 +1,24 @@
-<view class="classname">
-   <text>sdsdsd</text>
+<view class="allView">
+ <block wx:for="{{issueList}}"  wx:for-item="ima" wx:for-index="key">
+  <view class="classname" class="issue">
+      <view class="issueTop">
+         <image src="{{ima.list[0]}}" class="imgView"></image>
+         <view class="content">
+            <text class="title">{{ima.productTitle}}</text>
+            <text class="content">{{ima.productDetail}}</text>
+            <text class="price">¥{{ima.price}}</text>
+         </view>
+      </view>
+      <view class="issuebottom">
+      
+         <button class="xiajiaButton" size="mini" bindtap="soldout" plain="true" id="{{key}}">
+           下架
+         </button>
+          <button class="editButton"  size="mini" bindtap="editproduct" plain="true" id="{{key}}">
+           编辑
+          </button>
+      </view>  
+  </view>
+  </block>
 </view>
+

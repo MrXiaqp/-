@@ -1,0 +1,38 @@
+<view class="confirmallView">
+   <view class="addressView">
+     <view class="addressNameAndPhone">
+        <text class="addressName">收货人：{{getName}}</text>
+        <text class="addressPhone">{{getPhone}}</text>
+     </view>
+      <view class="address">
+         <text>收货地址：{{getAddress}}</text>
+      </view>
+   </view>
+    
+    <view class="productContent">
+       <view class="photoView">
+          <image src="{{src}}"  class="IssueNamePhoto"></image>
+          <text class="issueName">{{issueName}}</text>
+       </view>   
+       <view class="productTop">
+          <view class="classname">
+             <image src="{{productImg}}" class="productImg"></image>
+          </view>
+          <view class="content">
+             <text class="title">{{title}}</text>
+             <text class="content1">{{content}}</text>
+             <text class="price">{{price}}</text>            
+          </view>
+       </view>
+       <view class="peisong" bindtap="peisongstyle">
+          <text class="style">配送方式:</text>
+          <text class="styleContent" >{{Orderstyle}}</text>
+       </view>
+    </view>
+
+    <view class="confirmbottom">
+      <text class="confirmCount">合计：</text>
+      <text class="confirmNumber">¥{{price}}</text>
+      <button class="confirmButton" bindtap="confirmButton">确认下单</button>
+    </view>
+</view>

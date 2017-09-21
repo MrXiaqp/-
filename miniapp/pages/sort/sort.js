@@ -1,4 +1,4 @@
-var isSign = wx.getStorageSync('isSign');
+
 Page({
   data: {
     bangongSrc:"http://img2.ph.126.net/vtSVTIqEj37XovI4cXrl4Q==/6632228849978152196.png",
@@ -11,32 +11,38 @@ Page({
     meiRongSrc:"http://img2.ph.126.net/rtio-a5DvHWS_d7fGa8EEA==/6632563101512995853.png"
   },
   onLoad:function(options){
+    var isSign = wx.getStorageSync('isSign');
     if(isSign=='0'){
-     wx.switchTab({
-       url: '../my/my',
-       success: function(res){
+      
+      wx.switchTab({
+        url: '../my/my',
+        success: function(res){
        
-       },
-       fail: function() {
+        },
+        fail: function() {
    
-       },
-       complete: function() {
+        },
+        complete: function() {
          // complete
-       }
+        }
      })
      
     }
    },
    onShow:function(options){
+     var isSign = wx.getStorageSync('isSign');
       if(isSign=='1'){
         this.setData({  
             sign:true
            
        })
-      }
-       if(isSign=='0'){
-     wx.switchTab({
-       url: '../my/my',
+      }else if(isSign=='0'){
+        this.setData({  
+            sign:false
+           
+       })
+         wx.switchTab({
+         url: '../my/my',
        success: function(res){
        
        },

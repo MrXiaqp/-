@@ -1,0 +1,29 @@
+<view class="allView">
+ <block wx:for="{{buyList}}"  wx:for-item="ima" wx:for-index="key">
+  <view class="classname" class="issue">
+      <view class="issueTop">
+         <image src="{{ima.list[0]}}" class="imgView"></image>
+         <view class="content">
+            <text class="title">{{ima.productTitle}}</text>
+            <text class="content">{{ima.productDetail}}</text>
+            <text class="price">¥{{ima.price}}</text>
+         </view>
+         <image src="{{src1}}" class="imgView1"  wx:if="{{ima.isrefuse}}"></image>
+      </view>
+    <view class="issuebottom">
+      
+      <view wx:if="{{ima.applyTuihuo}}" >
+        <button  style="{{sty1}}" size="mini" bindtap="applyproduct" plain="true" id="{{key}}">
+           申请退货
+         </button>
+       </view>
+      <view style="{{sty2}}" >
+      
+         <button   size="mini" bindtap="applyTuihuo" plain="true" id="{{key}}">
+           取消退货
+          </button>
+      </view> 
+    </view>
+  </view>
+  </block>
+</view>

@@ -67,3 +67,8 @@ color:#E5E5E5;
    height: 400rpx;
 
 }
+.saveAddress{
+   background: orangered;
+   color: white;
+
+}

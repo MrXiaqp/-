@@ -1,0 +1,38 @@
+<view class="allView">
+<block wx:for="{{saleList}}"  wx:for-item="ima" wx:for-index="key">
+   <view class="productContent">
+     
+     
+   <view class="addressView">
+     <view class="addressNameAndPhone">
+        <text class="addressName">收货人：{{ima.getName}}</text>
+        <text class="addressPhone">{{ima.getPhone}}</text>
+     </view>
+      <view class="address">
+         <text>收货地址：{{ima.getAddress}}</text>
+      </view>
+   </view>   
+   
+   <view class="issueTop">
+         <image src="{{ima.list[0]}}" class="imgView"></image>
+         <view class="content">
+            <text class="title">{{ima.productTitle}}</text>
+            <text class="content">{{ima.productDetail}}</text>
+            <text class="price">¥{{ima.price}}</text>
+         </view>
+  </view>
+  
+
+    <view class="issuebottom" wx:if="{{ima.applystatic}}">
+      
+        
+        <button class="xiajiaButton" size="mini" bindtap="passTuihuo" plain="true" id="{{key}}">
+           允许退货
+         </button>
+          <button class="applyButton"  size="mini" bindtap="refuseTuihuo" plain="true" id="{{key}}">
+           拒绝退货
+          </button>
+    </view> 
+  </view>
+ </block>
+</view>

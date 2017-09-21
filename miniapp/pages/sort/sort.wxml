@@ -18,13 +18,6 @@
         <image src="{{peijianSrc}}" class="row1Image"></image>
         <text class="row1Text">电脑/配件</text>
       </view>
-      <view class="ZiXingrow1View">
-        <image src="{{zixingSrc}}" class="ZiXingrow1Image"></image>
-        <text class="row1Text">代步工具</text>
-      </view>
-      <view class="row1View">
-        <image src="{{tushuSrc}}" class="row1Image"></image>
-        <text class="row1Text">图书/音像</text>
-      </view>
+    
    </view>
 </view>

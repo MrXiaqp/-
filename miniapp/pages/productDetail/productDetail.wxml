@@ -1,36 +1,32 @@
 <view>   
    <view class="swipers">
     <swiper class="swiper-s" indicator-dots="true" autoplay="true" duration="750">
+     <block wx:for="{{viewlist}}" wx:for-item="ima">
       <swiper-item>
-        <image src="{{computerImageUrl}}" class="swiper1-img"></image>
+        <image src="{{ima}}" class="swiper1-img"></image>
       </swiper-item>
-      <swiper-item>
-        <image src="{{lightImageUrl}}" class="swiper-img2"></image>
-      </swiper-item>
-      <swiper-item>
-        <image src="{{xieImageUrl}}" class="swiper-img3"></image>
-      </swiper-item>
-      <swiper-item>
-        <image src="{{xieImageUrl}}" class="swiper-img3"></image>
-      </swiper-item>
+      </block>
     </swiper>
   </view>
  <view class="priceAndTime">
-   <text class="price">¥100</text>
-   <text class="data">10小时前来过</text>
+   <text class="price">¥{{price}}</text>
  </view>
 
  <view class="productDetail">
-   <text class="productTitel">搬家,家具冰箱洗衣机桌椅，家具 </text>
-   <text class="content">九成新，淘宝买的没怎么用，因家庭变故回老家出售，急，还有一些别的东西，可以上门来看</text>
-   <text class="touch">联系方式：18826220201</text>
+   <view class="">
+    <image src="/images/kong.png"></image>
+    <text ></text>
+  </view>
+    <text class="productTitel">{{title}}</text>
+    <text class="content">{{productContent}}</text>
+    <text class="touch">联系方式：{{phone}}</text>
 
  </view>
   <view class="bottom">
      <image src="{{src}}" class="images" bindtap="collectionEvent"></image>   
      <text class="collection">收藏</text>
-     <button class="button1" hover-class="hoverc">联系卖家</button>
-     <button class="button2" hover-class="hoverc">马上买</button>
+     <button class="button1" hover-class="hoverc"  bindtap="calling">联系卖家</button>
+     <button class="button2" hover-class="hoverc"  bindtap="nowbuy">马上买</button>
   </view>
    
   

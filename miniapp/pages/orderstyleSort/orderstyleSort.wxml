@@ -1,0 +1,9 @@
+<view class="section">
+ 
+ 
+  <picker bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
+     <view class="classname">
+     点击选择一个分类:{{array[index]}}
+     </view>
+   </picker>
+</view>

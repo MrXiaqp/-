@@ -1,0 +1,189 @@
+.confirmallView{
+   background-color: lightgray
+
+
+}
+
+.productContent{
+    width: 100%;
+    height: 600rpx;
+    background-color: white;
+    margin-top: 20rpx;
+    position: relative;
+    overflow:hidden;
+   
+
+}
+.productContent::before {
+content:" ";
+position:absolute;
+left:0;
+top:0;
+right:0;
+height:1px;
+border-top:1rpx solid #E5E5E5;
+color:#E5E5E5;
+
+}
+.productContent::after {
+content:" ";
+position:absolute;
+left:0;
+bottom:0;
+right:0;
+height:1px;
+border-bottom:1rpx solid #E5E5E5;
+color:#E5E5E5;
+
+}
+.addressView{
+   display: flex;
+   flex-direction: column;
+   margin-top: 30rpx; 
+   width: 100%;
+   height: 140rpx;
+   border-top: 6rpx dashed cornflowerblue;
+   border-bottom: 6rpx dashed cornflowerblue;
+   background-color: papayawhip;
+}
+.addressNameAndPhone{
+   display: flex;
+   flex-direction: row;
+   padding-top: 10rpx;
+
+
+}
+.address{
+   padding-top: 20rpx;
+
+
+
+}
+.photoView{
+   width: 100%;
+   height: 120rpx;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   margin-top: 20rpx;
+   margin-left: 10rpx;
+}
+.photoView::after{
+ content:" ";
+ position:absolute;
+ left:30rpx;
+ bottom:0;
+ right:0;
+ height:1px;
+  border-bottom:1rpx solid #E5E5E5;
+ color:#E5E5E5;
+}
+.IssueNamePhoto{
+ 
+   width: 100rpx;
+   height:100rpx;
+  
+   border-radius: 50%
+
+
+}
+.issueName{
+    padding-left: 40rpx;
+    font-size: 30rpx;
+    margin-top: 30rpx;
+
+}
+.productTop{
+  width:100%;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+  height: 270rpx;
+  }
+.productTop::after{
+ content:" ";
+ position:absolute;
+ left:30rpx;
+ bottom:0;
+ right:0;
+ height:1px;
+  border-bottom:1rpx solid #E5E5E5;
+ color:#E5E5E5;
+}
+.content{
+  padding-top: 30rpx;
+  padding-left: 20rpx;
+   display:flex;
+   flex-direction: column;
+}
+.productImg{
+   padding-left: 40rpx;
+  padding-top: 30rpx;
+   width:230rpx;
+   height: 230rpx;
+
+
+}
+.title{
+   margin-top: 20rpx;
+   font-size: 40rpx;
+}
+.content1{
+  margin-top: 10rpx;
+  font-size: 40rpx;
+}
+.price{
+   margin-top: 40rpx;
+    font-size: 40rpx;
+   color: red;
+}
+.addressPhone{
+  padding-left: 60rpx;
+
+
+
+}
+.peisong{
+  padding-top: 40rpx;
+
+
+}
+.style{
+  padding-left: 10rpx;
+
+
+}
+.styleContent{
+ padding-left: 350rpx;
+
+
+}
+.confirmbottom{
+  border-top:1rpx solid #E5E5E5;
+  display: flex;
+  flex-direction: row;
+ background-color: white;
+ margin-top: 320rpx;
+  width: 100%;
+  height: 130rpx;
+
+  
+}
+.confirmCount{
+    padding-top: 20rpx;
+
+}
+.confirmNumber{
+    padding-top: 20rpx;
+     color: orangered;
+
+
+}
+.confirmButton{
+    margin-left: 280rpx;
+    margin-top: 10rpx;
+    width: 220rpx; 
+    height: 100rpx;
+     background-color: orangered;
+     color: white;
+}

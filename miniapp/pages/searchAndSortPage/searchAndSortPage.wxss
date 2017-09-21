@@ -1,0 +1,59 @@
+.allView{
+
+ background-color:gainsboro ;
+ 
+  
+}
+.img{
+   width: 360rpx;
+   height: 400rpx;
+   background-color: white;
+
+}
+
+.view{
+  
+  display: flex;
+  flex-direction: column;
+   margin-left: 10rpx;
+   margin-top: 10rpx;
+ float: left;
+  height: 550rpx;
+  width:360rpx;
+   margin-bottom: 15rpx;
+   position: relative;
+
+}
+
+.titleAndprice{
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rpx;
+    background-color: white;
+    width: 250rpx;
+}
+.title{
+   font-size: 30rpx;
+   padding-top:2rpx; 
+   
+    color: grey;
+
+
+}
+.price{
+
+   padding-top:30rpx; 
+   color: red;
+   
+
+}
+.view2{
+  
+  margin-top: 10rpx;
+  margin-left: 7rpx;
+   margin-right: 3rpx;
+  
+  background-color: white;
+  border-bottom:1rpx solid #E5E5E5;
+
+}

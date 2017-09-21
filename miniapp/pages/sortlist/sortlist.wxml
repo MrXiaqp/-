@@ -1,0 +1,17 @@
+<view class="allView">
+   
+    <block wx:for="{{viewList}}"  wx:for-item="ima" wx:for-index="key">
+   
+      <view class="view" bindtap="productDetail" id="{{key}}">
+          <view class="classname">
+             <image src="{{ima.list[0]}}" class="img"></image>
+          </view>
+          <view class="titleAndprice">
+             <text class="title">{{ima.productTitle}}</text>
+             <text class="price">¥{{ima.price}}</text>
+          </view>
+      </view>
+  
+   </block>
+ 
+</view>

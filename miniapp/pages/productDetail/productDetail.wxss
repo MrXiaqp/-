@@ -89,6 +89,7 @@
   width: 250rpx;
   height: 100rpx;
    background-color:crimson;
+   color: white;
 }
 .images{
   padding-top: 10rpx;

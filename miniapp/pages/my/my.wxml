@@ -11,10 +11,6 @@
     <button formType="submit" bindtap="loginBtnClick">登录</button>
   </view>
   <view id="xiamian">
-    <checkbox-group name="checkbox">
-      <label>
-        <checkbox value="checkbox1" checked="checked" />自动登录</label>
-    </checkbox-group>
     <view>
       <navigator url="../register/register" hover-class="changstyle">免费注册</navigator>
     </view>
@@ -22,30 +18,30 @@
 </view>
 <view class="container" wx:if="{{sign1}}">
   <view class="userinfo">
-    <image src="/images/头像1.png" class="userinfo-avatar" background-size="cover">
+    <image src="{{userImg}}" class="userinfo-avatar" background-size="cover">
     </image>
-    <text class="userinfo-nickname">李白是不是头不合适</text>
+    <text class="userinfo-nickname">{{username}}</text>
   </view>
   <view class="headView">
-    <view class="headviewFrist" bindtap="headviewFrist">
-      <image src="/images/发布.png" class="image1"></image>
+    <view class="headviewFrist" bindtap="issueCount">
+      <image src="{{fabu}}" class="image1"></image>
       <text class="headviewText">我发布的</text>
-      <text class="headviewText">0</text>
+      <text class="headviewText">{{issueCount}}</text>
     </view>
-    <view class="headviewFrist2">
-      <image src="/images/卖出.png" class="image2"></image>
+    <view class="headviewFrist2"bindtap="sale">
+      <image src="{{sale}}" class="image2"></image>
       <text class="headviewText">我卖出的</text>
-      <text class="headviewText">0</text>
+      <text class="headviewText">{{saleCount}}</text>
     </view>
-    <view class="headviewFrist3">
-      <image src="/images/我买到的.png" class="image3"></image>
+    <view class="headviewFrist3" bindtap="buy">
+      <image src="{{sell}}" class="image3"></image>
       <text class="headviewText">我买到的</text>
-      <text class="headviewText">0</text>
+      <text class="headviewText">{{buyCount}}</text>
     </view>
-    <view class="headviewFrist4">
-      <image src="/images/收藏1.png" class="image4"></image>
+    <view class="headviewFrist4" bindtap="wantproduct">
+      <image src="{{collect}}" class="image4"></image>
       <text class="headviewText">我想要的</text>
-      <text class="headviewText">0</text>
+      <text class="headviewText">{{issueLikeCount}}</text>
     </view>
   </view>
   <view class="infor_list">
@@ -54,8 +50,8 @@
       <text class="addrText">地址管理</text>
       <text class="addrText1">></text>
     </navigator>
-    <navigator url="url" hover-class="hovers" class="navigator1">
-      <image src="/images/关于我们.png" class="addrImg"></image>
+    <navigator url="/pages/changepersonal/changepersonal" hover-class="hovers" class="navigator1">
+      <image src="/images/personal.png" class="addrImg"></image>
       <text class="addrText">个人修改</text>
       <text class="addrText1">></text>
     </navigator>
@@ -72,6 +68,6 @@
   </view>
 
   <view class="buttonView">
-     <button class="tuichuButton">退出登录</button>
+     <button class="tuichuButton" bindtap="tuichu">退出登录</button>
   </view>
 </view>

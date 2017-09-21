@@ -1,100 +1,80 @@
 <view class="allView">
+
   <view class="search">
     <icon type="search" size="18" color="#405f80" class="search-img" />
-    <input type="text" placeholder="搜索商品" placeholder-class="placeholdere" />
+    <input type="text" placeholder="搜索商品" placeholder-class="placeholdere" confirm-type="done"   bindconfirm="toSearch"/>
   </view>
-  <view class="swipers">
-    <swiper class="swiper-s" indicator-dots="true" autoplay="true" duration="750">
-      <swiper-item>
-        <image src="{{computerImageUrl}}" class="swiper1-img"></image>
-      </swiper-item>
-      <swiper-item>
-        <image src="{{lightImageUrl}}" class="swiper-img2"></image>
-      </swiper-item>
-      <swiper-item>
-        <image src="{{xieImageUrl}}" class="swiper-img3"></image>
-      </swiper-item>
-    </swiper>
-  </view>
-  <view class="sort">
+ <scroll-view class="grid-container" scroll-y="true" bindscrolltolower="onScrollLower">
+
+  <view class="sort" >
     <text class="font1">热门分类</text>
-    
   </view>
   <view class="sorts">
     <view class="firstRow">
       <view class="phone">
-        <view class="phoneText">
+        <view class="phoneText" id="手机" catchtap="sort">
           <text class="">手机</text>
           <text class="fangxing">二手手机放心买</text>
         </view>
         <image src="{{phoneImageUrl}}" class="phoneImg"></image>
       </view>
       <view class="shuma">
-        <view class="shumaText">
+        <view class="shumaText" id="数码" catchtap="sort">
           <text class="">数码</text>
           <text class="fangxingshuma">二手低价淘尖货</text>
         </view>
         <image src="{{xiangjiImageUrl}}" class="shumaImg"></image>
       </view>
-    </view>
+     </view>
+     <view class="secondRow">  
+       <view class="shuma">
+        <view class="shumaText" id="图书" catchtap="sort">
+          <text class="">图书</text>
+          <text class="fangxingshuma">二手图书学的爽</text>
+        </view>
+        <image src="{{tushuSrc}}" class="shumaImg"></image>
+      </view>
+    
+     <view class="shuma">
+        <view class="shumaText" id="代步" catchtap="sort">
+          <text class="">代步</text>
+          <text class="fangxingshuma">二手代步代你行</text>
+        </view>
+        <image src="{{zixingSrc}}" class="shumaImg"></image>
+      </view>
+   </view>
   </view>
-  <view class="post-container" bindtap="detail">
-    <view class="post-auther-date">
-      <image src="{{autherImageUrl}}" class="post-auther"></image>
-      <text class="post-name">最近是不是头不合适</text>
-      <text class="post-date">2017.1.4</text>
-    </view>
+  
+ 
+<block wx:for="{{viewList}}"  wx:for-item="ima" wx:for-index="key">
+  <view class="post-container" catchtap="detail" id="{{key}}">
+      <view class="post-auther-date">
+        <image src="{{ima.userImage}}" class="post-auther"></image>
+        <text class="post-name">{{ima.username}}</text>
+     </view>
     <view>
-      <scroll-view scroll-x="true" class="content-scroll" scroll-into-view="third">
+   <scroll-view scroll-x="true"  scroll-into-view="third" class="content-scroll">
+      <block wx:for="{{ima.list}}" wx:for-item="item"> 
         <view id="first" class="scroll-view1">
-          <image src="{{computerImageUrl}}" class="scroll-image1"></image>
+          <image src="{{item}}" class="scroll-image1"></image>
         </view>
-        <view id="second" class="scroll-view2">
-          <image src="{{lightImageUrl}}" class="scroll-image2"></image>
-        </view>
-        <view id="third" class="scroll-view3">
-          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
-        </view>
-         <view id="third" class="scroll-view3">
-          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
-        </view>
-      </scroll-view>
+       </block>
+     </scroll-view>
     </view>
-    <text class="money">¥100</text>
-    <text class="content">近日购入,八成新，喜欢就联系我</text>
-    <view>
-      <image src="{{specialImageUrl}}" class="special"></image>
-      <text class="specialCount">123</text>
+    <view class="money">
+       <text class="money">${{ima.price}}</text>
+    </view>
+    <view class="smallIntruduce">
+       <text class="content">{{ima.productTitle}}</text>
     </view>
   </view>
-
-   <view class="post-container">
-    <view class="post-auther-date">
-      <image src="{{autherImageUrl}}" class="post-auther"></image>
-      <text class="post-name">最近是不是头不合适</text>
-      <text class="post-date">2017.1.4</text>
+</block>
+</scroll-view>
+   
+    <view class="body-view">
+         <loading hidden="{{hidden}}" bindchange="loadingChange">
+            加载中...
+         </loading>
     </view>
-    <view>
-      <scroll-view scroll-x="true" class="content-scroll" scroll-into-view="third">
-        <view id="first" class="scroll-view1">
-          <image src="{{computerImageUrl}}" class="scroll-image1"></image>
-        </view>
-        <view id="second" class="scroll-view2">
-          <image src="{{lightImageUrl}}" class="scroll-image2"></image>
-        </view>
-        <view id="third" class="scroll-view3">
-          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
-        </view>
-         <view id="third" class="scroll-view3">
-          <image src="{{xieImageUrl}}" class="scroll-image3"></image>
-        </view>
-      </scroll-view>
-    </view>
-    <text class="money">¥100</text>
-    <text class="content">近日购入,八成新，喜欢就联系我</text>
-    <view>
-      <image src="{{specialImageUrl}}" class="special"></image>
-      <text class="specialCount">123</text>
-    </view>
-  </view>
+ 
 </view>

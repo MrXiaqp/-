@@ -5,8 +5,12 @@
 .search{
    display: flex;
    flex-direction: row;
-   background-color: #f2f2f2;
-
+  background-color: white;
+   width: 100%;
+   
+   
+   
+   
 }
 
 .search-img{
@@ -14,8 +18,8 @@
 
 }
 .placeholdere{
-   font-size: 14rpx;
-   color: #d1d1d1;
+   font-size: 30rpx;
+   color: black;
    margin-left:20rpx;
 
 }
@@ -23,8 +27,8 @@
    height:100%;
    width:600rpx;
    margin-left: 20rpx;
-   font-size: 30rpx; 
-
+   font-size: 20rpx; 
+   color:black; 
 }
 .swipers{
    background-color: #fff;
@@ -56,7 +60,7 @@
 
 }
 .sort{
-  margin-top: 15rpx;
+  margin-top: 10rpx;
   display: flex;
   flex-direction: row;
   background-color: #fff
@@ -112,6 +116,12 @@
 
 
 }
+.secondRow{
+  display: flex;
+  flex-direction: row;
+
+
+}
 .fangxingshuma{
    padding-top: 5rpx;
  font-size:25rpx;
@@ -138,7 +148,7 @@
 
 }
 .shumaImg{
-     width: 130rpx;
+   width: 130rpx;
   height: 120rpx;
 
 }
@@ -161,12 +171,13 @@
    width: 55rpx;
    height:55rpx;
    vertical-align: middle;
-
+   border-radius: 50%
 }
 .post-name{
   margin-left: 20rpx;
   font-size: 27rpx;
  vertical-align: middle;
+
 
 }
 .post-date{
@@ -241,5 +252,27 @@
 .specialCount{
    font-size: 30rpx;
    color: grey;
+
+}
+
+.money{
+  width: 100%;
+  height:50rpx;
+
+
+}
+.smallIntruduce{
+  margin-top: 10rpx;
+  width: 100%;
+  height:90rpx;
+
+}
+.grid-container{
+   
+  height: 2500rpx;
+ 
+
+
+
 
 }

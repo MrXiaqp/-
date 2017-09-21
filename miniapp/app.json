@@ -1,24 +1,31 @@
 {
   "pages":[
-     "pages/welcome/welcome",
+    
+    "pages/welcome/welcome",
+    "pages/homePage/homePage",
+    "pages/my/my",
+    
+     "pages/register/register",
+    
+     "pages/orderDetail/orderDetail",
+     "pages/shopping/shopping",
+     "pages/productDetail/productDetail",
       "pages/address/address",
-      "pages/my/my",
-     "pages/sort/sort",
     
+      "pages/sort/sort",
       "pages/issue/issue",
-       "pages/homePage/homePage",
-      "pages/shopping/shopping",
-    
-       "pages/orderDetail/orderDetail",
-       "pages/register/register",
-   
+      "pages/wantproduct/wantproduct",
       
-      "pages/productDetail/productDetail",
-       "pages/aboutme/aboutme",
-    
-      "pages/my-commit/my-commit"
-      
-        
+      "pages/aboutme/aboutme",
+      "pages/my-commit/my-commit",
+      "pages/selectSort/selectSort",
+      "pages/pay/pay",
+      "pages/orderstyleSort/orderstyleSort",
+      "pages/mysale/mysale",
+      "pages/changepersonal/changepersonal",
+      "pages/searchAndSortPage/searchAndSortPage",
+      "pages/sortlist/sortlist",
+      "pages/mysell/mysell"
       
     ],
      "window":{
@@ -43,8 +50,8 @@
       
          "pagePath": "pages/issue/issue",
          "text": "发布",
-         "iconPath": "/images/发布未选中.png",
-         "selectedIconPath": "/images/发布选中.png"
+         "iconPath": "/images/发布满蓝色@2x.png",
+         "selectedIconPath": "/images/发布满蓝色@2x.png"
 
 
        },{
@@ -63,5 +70,4 @@
        }]
      }
      
-       
 }

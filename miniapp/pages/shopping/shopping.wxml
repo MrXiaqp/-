@@ -1,48 +1,32 @@
-<view wx:if="{{sign}}" class="alls">
-  <view class="view-panel">
-    <view class="view-panel_hd">
-      <text data-value="edit" class="info-meta">删除</text>
-    </view>
-    <view class="">
-      <navigator url="url" class="weui-media-box weui-media-box_appmsg">
-        <view class="weui-media-box_hd_in-appmsg">
-           <image class="weui-media-box_thumb" src="/images/手机.png"></image>
-        </view>
-        <view class="weui-media-box_bd weui-media_bd_in_appmsg">
-           <view class="weui-media-box_title">
-              我是一个手机
-           </view>
-           <view class="weui-media-box_desc">
-              <text class="text-orangered ">117</text>
-           </view>
-        </view>
-      </navigator>
-    </view>
+<view class="noshoppingView" wx:if="{{noshoppingView}}">
+   <image src="{{noshopping}}"p class="noshoppingView"></image> 
+   <view class="firstShopView">
+      <text class="firstShop"  bindtap="goshop">去首页逛逛吧</text>
+   </view>
+  
+ 
+
+</view>
+<view class="allView" wx:if="{{shoppingView}}" wx:for="{{viewList}}"   wx:for-item="ima" wx:for-index="key" >
+
+  <view class="classname" class="shoppingCar">
+      <view class="shoppingCarTop">
+         <image src="{{ima.list[0]}}" class="imgView"></image>
+         <view class="content">
+            <text class="title">{{ima.productTitle}}</text>
+            <text class="content">{{ima.productDetail}}</text>
+            <text class="price">¥{{ima.price}}</text>
+         </view>
+      </view>
+      <view class="shoppingCarBottom">
+      
+         <button class="dellButton" size="mini" bindtap="deleteShopping" plain="true" id="{{key}}">
+           删除
+         </button>
+          <button class="shopButton"  size="mini" bindtap="payShopping"  id="{{key}}">
+           购买
+          </button>
+      </view>  
   </view>
 
- <view class="view-panel">
-    <view class="view-panel_hd">
-      <text data-value="edit" class="info-meta">删除</text>
-    </view>
-    <view class="">
-      <navigator url="url" class="weui-media-box weui-media-box_appmsg">
-        <view class="weui-media-box_hd_in-appmsg">
-           <image class="weui-media-box_thumb" src="/images/手机.png"></image>
-        </view>
-        <view class="weui-media-box_bd weui-media_bd_in_appmsg">
-           <view class="weui-media-box_title">
-              我是一个手机
-           </view>
-           <view class="weui-media-box_desc">
-              <text class="text-orangered ">117</text>
-           </view>
-        </view>
-      </navigator>
-    </view>
-  </view>
-  
-  <view class="button-sp-area">
-     <button class="weui-btn" type="primary">去结算</button>
-     <button class="weui-btn" type="warn">清空</button>
-  </view>
 </view>

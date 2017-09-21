@@ -1,4 +1,8 @@
-<view class="classname">
-
-
+<view class="allView">
+  <view class="">
+    <view class="shouhuoView">
+      <text class="name">王佳伟</text>
+      <text class="phone">18826220201</text>
+    </view>
+  </view>
 </view>

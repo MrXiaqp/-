@@ -126,11 +126,17 @@ color:#E5E5E5;
 
 
 }
+.title{
+  margin-top: 31rpx;
+  height: 60rpx;
+  color: #515151
+
+}
 .view-content_hd{
     padding:10rpx 15rpx 10rpx;
 
    color:#999999;
-   font-size:20px;
+   font-size:40px;
    position: relative;
    width: 100%;
    height: 150rpx;
@@ -151,8 +157,8 @@ color:#E5E5E5;
 
 }
 .baobei{
-  font-size: 20rpx;
-
+  font-size: 30rpx;
+  height: 145rpx;
 }
 .view-content-style{
     font-size: 30rpx;
@@ -222,6 +228,30 @@ flex-direction: row;
 
 }
 .view-content_price_hd::after{
+    
+content:" ";
+position:absolute;
+left:30rpx;
+bottom:0;
+right:0;
+height:1px;
+border-bottom:1rpx solid #E5E5E5;
+color:#E5E5E5;
+
+}
+.view-content_sort_hd{
+display: flex;
+flex-direction: row;
+ padding:10rpx 15rpx 10rpx;
+
+   color:#999999;
+   font-size:20px;
+   position: relative;
+   height: 70rpx;
+   
+
+}
+.view-content_sort_hd::after{
     
 content:" ";
 position:absolute;

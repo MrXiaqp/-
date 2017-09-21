@@ -1,0 +1,15 @@
+<view class="allView">
+ <block wx:for="{{wantProductList}}"  wx:for-item="ima" wx:for-index="key">
+  <view class="classname" class="issue"  catchtap="detail" id="{{key}}">
+      <view class="issueTop">
+         <image src="{{ima.list[0]}}" class="imgView"></image>
+         <view class="content">
+            <text class="title">{{ima.productTitle}}</text>
+            <text class="content">{{ima.productDetail}}</text>
+            <text class="price">¥{{ima.price}}</text>
+         </view>
+      </view>
+     
+  </view>
+  </block>
+</view>

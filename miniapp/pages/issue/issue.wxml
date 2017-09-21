@@ -2,7 +2,7 @@
   <view class="photoView">
     <scroll-view scroll-x="true" class="content-scroll" scroll-into-view="sixth" >
        <view class="scrollView1" id="first" style="display:{{view1}}">  
-          <image src="{{addPhotot}}" class="tinajia" bindtap="addPhoto"></image>
+          <image src="{{addPhoto}}" class="tinajia" bindtap="addPhoto"></image>
       </view>
       <block wx:for="{{imageList}}" wx:for-item="ima" wx:for-index="key">
        <view class="scrollView2"  id="{{key}}" style="display:{{ids}}"> 
@@ -16,16 +16,17 @@
   </view>
    <view class="titleAndDetail">
       <view class="view-title_hd">
-        <textarea placeholder="宝贝标题" />
+        <input placeholder="宝贝标题" bindblur="productTitle" class="title" value="{{productTitle}}"/>
       </view>
        <view class="view-content_hd">
-        <textarea placeholder="宝贝的购买渠道，新旧/价格的描述" placeholder-class="view-content-style" class="baobei"/>
+        <textarea placeholder="宝贝的购买渠道，新旧/价格的描述" placeholder-class="view-content-style" class="baobei" bindblur="productDetail"  value="{{productDetail}}"/>
       </view>
    </view>
    <view class="titleAndDetail">
        <view class="view-content_phone_hd">
           <text>电话:</text>
-          <textarea placeholder="请输入电话号码" type="number" class="phone" placeholder-style="font-size:40rpx"/> 
+          <input placeholder="请输入电话号码" type="number" class="phone" placeholder-style="font-size:40rpx" bindblur="productPhone"
+          value="{{productPhone}}"/> 
        </view>
        <view class="view-content_school_hd">
           <text>学校：</text>
@@ -33,12 +34,17 @@
        </view>
        <view class="view-content_price_hd">
           <text>价格:</text>
-          <input placeholder="请输入价格" type="number" placeholder-style="font-size:40rpx"/>
+          <input placeholder="请输入价格" type="number" placeholder-style="font-size:40rpx" bindblur="productPrice"  value="{{productPrice}}"/>
        </view>
-   </view>
+     </view>
+  <view class="titleAndDetail" bindtap="select">
+       <view class="view-content_sort_hd">
+          <text>请选择分类:{{sort}}</text>
+       </view>
+    </view>
+  
    <view class="submit">
-      <button class="submit_button">提交</button>
-   
+      <button class="submit_button" bindtap="submit">提交</button>
    </view>
  
 </view>

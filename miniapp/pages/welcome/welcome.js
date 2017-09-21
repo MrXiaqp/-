@@ -18,7 +18,7 @@ Page({
   },
   start:function(event){
    wx.switchTab({
-     url: '../homePage/homePage',
+     url: '../my/my',
      success: function(res){
        // success
      },

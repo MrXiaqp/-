@@ -1,0 +1,19 @@
+.allView{
+   
+
+
+}
+
+.shouhuoView{
+   display: flex;
+   flex-direction:row
+
+
+
+}
+.phone{
+   padding-left: 100rpx;
+ 
+
+
+}
